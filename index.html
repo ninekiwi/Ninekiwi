@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Generative Engine Optimization (GEO) -->
+    <title>ninekiwi | Architects of Digital Masterpieces</title>
+    <meta name="description" content="ninekiwi builds precise, professional applications. From prototyping FieldSync for construction to exploring boundless digital canvases. Let's craft something beautiful.">
+    <meta name="keywords" content="ninekiwi, professional applications, software development, FieldSync, construction inspection software, digital canvas, custom software">
+    <meta name="author" content="ninekiwi">
+    <link rel="canonical" href="https://ninekiwi.com" />
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="ninekiwi | Architects of Digital Masterpieces">
+    <meta property="og:description" content="A blank canvas for digital masterpieces. We craft elegant, hyper-focused professional tools.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ninekiwi.com">
+
+    <!-- Structured Data for AI & Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ninekiwi",
+      "url": "https://ninekiwi.com",
+      "logo": "https://ninekiwi.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@ninekiwi.com",
+        "contactType": "customer service"
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "SoftwareApplication",
+          "name": "FieldSync",
+          "applicationCategory": "BusinessApplication",
+          "description": "A survey, inspection, and report generating tool specifically for construction sites."
+        }
+      }
+    }
+    </script>
+
+    <!-- Google Fonts: Playfair (Mughal Elegance) & Inter (HCI Readability) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kiwi: {
+                            dark: '#1a1c1a',   // Dark Grey Background
+                            light: '#f4f5f0',  // Very Light Grey Paper
+                            green: '#84cc16',  // Vibrant Kiwi Green
+                            brown: '#5c2e0e',  // Earthy Brown
+                            accent: '#4d7c0f'  // Deep Mughal Garden Green
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], // For high legibility (HCI)
+                        serif: ['Playfair Display', 'serif'], // For artistic headings
+                    },
+                    backgroundImage: {
+                        // Subtle geometric Jaali pattern inspired by Mughal architecture
+                        'jaali-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%2384cc16' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Smooth transitions and glowing effects inspired by ui.ibelick */
+        .glass-panel {
+            background: rgba(244, 245, 240, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(244, 245, 240, 0.1);
+        }
+        .glow-border:hover {
+            box-shadow: 0 0 20px rgba(132, 204, 22, 0.2);
+            border-color: rgba(132, 204, 22, 0.5);
+            transition: all 0.4s ease-in-out;
+        }
+        /* Custom text selection */
+        ::selection {
+            background-color: #84cc16;
+            color: #1a1c1a;
+        }
+    </style>
+</head>
+<body class="bg-kiwi-dark text-kiwi-light font-sans antialiased bg-jaali-pattern selection:bg-kiwi-green selection:text-kiwi-dark flex flex-col min-h-screen">
+
+    <!-- Navigation (HCI: Clear visibility, logical constraints) -->
+    <nav class="w-full fixed top-0 z-50 glass-panel border-b border-kiwi-light/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 group cursor-pointer">
+                <i data-lucide="leaf" class="text-kiwi-green group-hover:rotate-12 transition-transform duration-300"></i>
+                <span class="font-serif font-semibold text-xl tracking-wider">ninekiwi</span>
+            </div>
+            <a href="mailto:hello@ninekiwi.com" class="text-sm font-medium tracking-wide hover:text-kiwi-green transition-colors flex items-center gap-2">
+                Say Hello <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center justify-center pt-32 pb-20 px-6">
+        
+        <!-- Hero Section: The Canvas -->
+        <section class="max-w-4xl w-full text-center mb-32 space-y-8 animate-fade-in-up">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-kiwi-brown/30 bg-kiwi-brown/10 text-kiwi-brown text-xs uppercase tracking-widest font-semibold mb-6">
+                <span class="w-2 h-2 rounded-full bg-kiwi-green animate-pulse"></span>
+                The Canvas is Open
+            </div>
+            <h1 class="text-5xl md:text-7xl font-serif text-kiwi-light leading-tight">
+                Architects of the <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-kiwi-light to-kiwi-green italic">Digital Realm.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-kiwi-light/70 font-light max-w-2xl mx-auto leading-relaxed">
+                We introduce ourselves as builders of professional applications, but the truth is, we are an open canvas. From structured utility to unbounded creativity, if it can be imagined, we can engineer it.
+            </p>
+        </section>
+
+        <!-- Project Spotlight: FieldSync (Symmetrical Charbagh layout influence) -->
+        <section class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-32 relative">
+            <!-- Decorative Mughal Arch implied by border radius -->
+            <div class="absolute inset-0 border border-kiwi-light/5 rounded-t-full scale-105 -z-10 pointer-events-none hidden md:block"></div>
+            
+            <div class="order-2 md:order-1 glass-panel p-10 rounded-2xl glow-border relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i data-lucide="hard-hat" class="w-32 h-32 text-kiwi-light"></i>
+                </div>
+                <h3 class="font-serif text-3xl mb-4 flex items-center gap-3">
+                    FieldSync <span class="text-xs font-sans bg-kiwi-green text-kiwi-dark px-2 py-1 rounded-sm uppercase tracking-bold">Prototype</span>
+                </h3>
+                <p class="text-kiwi-light/80 mb-6 leading-relaxed">
+                    Precision meets the rugged environment. FieldSync is our upcoming survey, inspection, and report-generating engine tailored explicitly for construction sites. Replacing friction with seamless, instantaneous data synchronization.
+                </p>
+                <div class="flex items-center gap-2 text-kiwi-green text-sm font-medium tracking-wide">
+                    <i data-lucide="eye" class="w-4 h-4"></i> To be revealed soon
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2 space-y-6">
+                <h2 class="text-3xl font-serif">Bridging Ground & Cloud</h2>
+                <p class="text-kiwi-light/60 leading-relaxed">
+                    While we are currently prototyping robust solutions for the built environment, our expertise spans across traditional coding to modern deep learning. We believe technology should feel like an extension of the professional—unobtrusive, intuitive, and breathtakingly efficient.
+                </p>
+                <ul class="space-y-3 text-kiwi-light/80">
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-kiwi-green"></i> Deep Learning & ML Integration</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-kiwi-green"></i> Professional Toolchains</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-kiwi-green"></i> Open to Bespoke Innovations</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="max-w-2xl w-full text-center glass-panel p-12 rounded-3xl glow-border">
+            <i data-lucide="mail" class="w-10 h-10 mx-auto text-kiwi-green mb-6"></i>
+            <h2 class="text-3xl font-serif mb-4">Let's craft a masterpiece.</h2>
+            <p class="text-kiwi-light/60 mb-8">Whether you need an enterprise-grade utility or a wild concept brought to life, the discussion starts here.</p>
+            <a href="mailto:hello@ninekiwi.com" class="inline-block bg-kiwi-green text-kiwi-dark font-semibold px-8 py-4 rounded-full hover:bg-kiwi-light hover:text-kiwi-dark transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(132,204,22,0.4)]">
+                hello@ninekiwi.com
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer & The Easter Egg -->
+    <footer class="w-full py-8 border-t border-kiwi-light/10 mt-auto relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center text-kiwi-light/40 text-xs">
+            <p>&copy; <span id="year"></span> ninekiwi. All rights reserved.</p>
+            
+            <!-- Hidden Trigger (HCI: Low visibility, but provides feedback on hover) -->
+            <div id="enigma-trigger" class="w-2 h-2 rounded-full bg-kiwi-brown/20 hover:bg-kiwi-green cursor-pointer transition-colors duration-500" title="The Architect"></div>
+        </div>
+
+        <!-- Hidden Section Container -->
+        <div id="enigma-content" class="absolute bottom-0 right-0 w-full md:w-96 p-6 bg-kiwi-dark border-l border-t border-kiwi-green/20 transform translate-y-full transition-transform duration-700 ease-in-out glass-panel">
+            <div class="flex justify-between items-start mb-4">
+                <i data-lucide="user-circle" class="w-6 h-6 text-kiwi-brown"></i>
+                <button id="close-enigma" class="text-kiwi-light/40 hover:text-kiwi-green"><i data-lucide="x" class="w-4 h-4"></i></button>
+            </div>
+            <p class="text-sm font-serif italic text-kiwi-light/80 leading-relaxed">
+                "Behind the canvas is a recently graduated student exploring the technical world. Driven by the desire to create new things and impact the world in a soothing way, blending the elegance of the past with the algorithms of the future."
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts to initialize Icons and handle the Easter Egg -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+        
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Easter Egg Logic
+        const trigger = document.getElementById('enigma-trigger');
+        const content = document.getElementById('enigma-content');
+        const closeBtn = document.getElementById('close-enigma');
+
+        trigger.addEventListener('click', () => {
+            content.classList.remove('translate-y-full');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            content.classList.add('translate-y-full');
+        });
+    </script>
+</body>
+</html>
