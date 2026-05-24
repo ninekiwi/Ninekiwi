@@ -4,45 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO & Generative Engine Optimization (GEO) -->
+    <!-- Deep Generative Engine Optimization (GEO) & SEO -->
     <title>ninekiwi | Architects of Digital Masterpieces</title>
-    <meta name="description" content="ninekiwi builds precise, professional applications. From prototyping FieldSync for construction to exploring boundless digital canvases. Let's craft something beautiful.">
-    <meta name="keywords" content="ninekiwi, professional applications, software development, FieldSync, construction inspection software, digital canvas, custom software">
+    <meta name="description" content="ninekiwi is a digital laboratory building precise, professional applications. Currently prototyping FieldSync, an advanced construction inspection and survey tool.">
+    <meta name="keywords" content="ninekiwi, FieldSync, professional applications, construction software, surveying tools, custom software development, digital canvas">
     <meta name="author" content="ninekiwi">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://ninekiwi.com" />
     
-    <!-- Open Graph for Social Sharing -->
+    <!-- Open Graph -->
     <meta property="og:title" content="ninekiwi | Architects of Digital Masterpieces">
     <meta property="og:description" content="A blank canvas for digital masterpieces. We craft elegant, hyper-focused professional tools.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ninekiwi.com">
 
-    <!-- Structured Data for AI & Search Engines -->
+    <!-- Advanced JSON-LD for LLM Contextualization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "ninekiwi",
-      "url": "https://ninekiwi.com",
-      "logo": "https://ninekiwi.com/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "hello@ninekiwi.com",
-        "contactType": "customer service"
-      },
-      "makesOffer": {
-        "@type": "Offer",
-        "itemOffered": {
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://ninekiwi.com/#organization",
+          "name": "ninekiwi",
+          "url": "https://ninekiwi.com",
+          "description": "A digital laboratory and development domain dedicated to building high-precision professional applications and creative digital masterpieces.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "hello@ninekiwi.com",
+            "contactType": "customer service"
+          }
+        },
+        {
           "@type": "SoftwareApplication",
+          "@id": "https://ninekiwi.com/#fieldsync",
           "name": "FieldSync",
           "applicationCategory": "BusinessApplication",
-          "description": "A survey, inspection, and report generating tool specifically for construction sites."
+          "operatingSystem": "Web, Mobile",
+          "description": "An advanced field operations, structural inspection, and surveying engine tailored explicitly for construction sites.",
+          "provider": {"@id": "https://ninekiwi.com/#organization"}
         }
-      }
+      ]
     }
     </script>
 
-    <!-- Google Fonts: Playfair (Mughal Elegance) & Inter (HCI Readability) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -55,59 +61,89 @@
                 extend: {
                     colors: {
                         kiwi: {
-                            dark: '#1a1c1a',   // Dark Grey Background
-                            light: '#f4f5f0',  // Very Light Grey Paper
-                            green: '#84cc16',  // Vibrant Kiwi Green
-                            brown: '#5c2e0e',  // Earthy Brown
-                            accent: '#4d7c0f'  // Deep Mughal Garden Green
+                            dark: '#1a1c1a',   
+                            light: '#f4f5f0',  
+                            green: '#84cc16',  
+                            brown: '#5c2e0e',  
                         }
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'], // For high legibility (HCI)
-                        serif: ['Playfair Display', 'serif'], // For artistic headings
+                        sans: ['Inter', 'sans-serif'], 
+                        serif: ['Playfair Display', 'serif'], 
                     },
                     backgroundImage: {
-                        // Subtle geometric Jaali pattern inspired by Mughal architecture
-                        'jaali-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%2384cc16' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+                        'jaali-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%2384cc16' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+                    },
+                    keyframes: {
+                        scan: {
+                            '0%': { transform: 'translateY(-100%)' },
+                            '100%': { transform: 'translateY(100%)' }
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: 1, transform: 'scale(1)' },
+                            '50%': { opacity: .7, transform: 'scale(1.05)' },
+                        }
+                    },
+                    animation: {
+                        'scan-line': 'scan 3s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     }
                 }
             }
         }
     </script>
 
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-        /* Smooth transitions and glowing effects inspired by ui.ibelick */
         .glass-panel {
-            background: rgba(244, 245, 240, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(244, 245, 240, 0.1);
+            background: rgba(244, 245, 240, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(244, 245, 240, 0.08);
+            transition: all 0.3s ease;
         }
-        .glow-border:hover {
-            box-shadow: 0 0 20px rgba(132, 204, 22, 0.2);
-            border-color: rgba(132, 204, 22, 0.5);
-            transition: all 0.4s ease-in-out;
+        
+        /* 3D Tilt Effect for FieldSync Card */
+        .tilt-card {
+            transform-style: preserve-3d;
+            perspective: 1000px;
         }
-        /* Custom text selection */
+        .tilt-content {
+            transform: translateZ(30px);
+        }
+
+        /* Continuous UI Feedback */
         ::selection {
             background-color: #84cc16;
             color: #1a1c1a;
         }
-    </style>
+        
+        /* Smooth reveal for hidden section */
+        .clip-reveal {
+            clip-path: circle(0% at 90% 90%);
+            transition: clip-path 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        .clip-reveal.active {
+            clip-path: circle(150% at 90% 90%);
+        }
+    </script>
 </head>
 <body class="bg-kiwi-dark text-kiwi-light font-sans antialiased bg-jaali-pattern selection:bg-kiwi-green selection:text-kiwi-dark flex flex-col min-h-screen">
 
-    <!-- Navigation (HCI: Clear visibility, logical constraints) -->
-    <nav class="w-full fixed top-0 z-50 glass-panel border-b border-kiwi-light/10">
+    <!-- Navigation -->
+    <nav class="w-full fixed top-0 z-50 glass-panel border-b border-kiwi-light/10" aria-label="Main Navigation">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2 group cursor-pointer">
-                <i data-lucide="leaf" class="text-kiwi-green group-hover:rotate-12 transition-transform duration-300"></i>
+            <div class="flex items-center gap-3 group cursor-pointer" aria-label="ninekiwi home">
+                <!-- Custom Geometric Kiwi Logo -->
+                <svg viewBox="0 0 24 24" class="w-7 h-7 text-kiwi-green group-hover:rotate-90 transition-transform duration-500 ease-out" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10" stroke-opacity="0.5"/>
+                    <circle cx="12" cy="12" r="6" stroke-dasharray="2 3"/>
+                    <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                </svg>
                 <span class="font-serif font-semibold text-xl tracking-wider">ninekiwi</span>
             </div>
-            <a href="mailto:hello@ninekiwi.com" class="text-sm font-medium tracking-wide hover:text-kiwi-green transition-colors flex items-center gap-2">
-                Say Hello <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            <a href="mailto:hello@ninekiwi.com" class="text-sm font-medium tracking-wide hover:text-kiwi-green transition-colors flex items-center gap-2 group">
+                Say Hello <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
             </a>
         </div>
     </nav>
@@ -115,106 +151,185 @@
     <!-- Main Content -->
     <main class="flex-grow flex flex-col items-center justify-center pt-32 pb-20 px-6">
         
-        <!-- Hero Section: The Canvas -->
-        <section class="max-w-4xl w-full text-center mb-32 space-y-8 animate-fade-in-up">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-kiwi-brown/30 bg-kiwi-brown/10 text-kiwi-brown text-xs uppercase tracking-widest font-semibold mb-6">
-                <span class="w-2 h-2 rounded-full bg-kiwi-green animate-pulse"></span>
+        <!-- Hero Section -->
+        <section class="max-w-4xl w-full text-center mb-32 space-y-8" aria-labelledby="hero-heading">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-kiwi-brown/30 bg-kiwi-brown/10 text-kiwi-light/80 text-xs uppercase tracking-widest font-semibold mb-6">
+                <span class="w-2 h-2 rounded-full bg-kiwi-green animate-pulse-glow"></span>
                 The Canvas is Open
             </div>
-            <h1 class="text-5xl md:text-7xl font-serif text-kiwi-light leading-tight">
+            <h1 id="hero-heading" class="text-5xl md:text-7xl font-serif text-kiwi-light leading-tight">
                 Architects of the <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-kiwi-light to-kiwi-green italic">Digital Realm.</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-kiwi-light to-kiwi-green italic relative inline-block">
+                    Digital Realm.
+                    <!-- Decorative underline -->
+                    <span class="absolute -bottom-2 left-0 w-full h-px bg-gradient-to-r from-transparent via-kiwi-green to-transparent opacity-50"></span>
+                </span>
             </h1>
             <p class="text-lg md:text-xl text-kiwi-light/70 font-light max-w-2xl mx-auto leading-relaxed">
-                We introduce ourselves as builders of professional applications, but the truth is, we are an open canvas. From structured utility to unbounded creativity, if it can be imagined, we can engineer it.
+                We introduce ourselves as builders of high-precision professional applications, but fundamentally, we are an open canvas. From structured utility to unbounded creativity, if it can be imagined, we can engineer it.
             </p>
         </section>
 
-        <!-- Project Spotlight: FieldSync (Symmetrical Charbagh layout influence) -->
-        <section class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-32 relative">
-            <!-- Decorative Mughal Arch implied by border radius -->
-            <div class="absolute inset-0 border border-kiwi-light/5 rounded-t-full scale-105 -z-10 pointer-events-none hidden md:block"></div>
+        <!-- Project Spotlight: FieldSync -->
+        <section class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-32 relative" aria-labelledby="fieldsync-heading">
             
-            <div class="order-2 md:order-1 glass-panel p-10 rounded-2xl glow-border relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                    <i data-lucide="hard-hat" class="w-32 h-32 text-kiwi-light"></i>
-                </div>
-                <h3 class="font-serif text-3xl mb-4 flex items-center gap-3">
-                    FieldSync <span class="text-xs font-sans bg-kiwi-green text-kiwi-dark px-2 py-1 rounded-sm uppercase tracking-bold">Prototype</span>
-                </h3>
-                <p class="text-kiwi-light/80 mb-6 leading-relaxed">
-                    Precision meets the rugged environment. FieldSync is our upcoming survey, inspection, and report-generating engine tailored explicitly for construction sites. Replacing friction with seamless, instantaneous data synchronization.
-                </p>
-                <div class="flex items-center gap-2 text-kiwi-green text-sm font-medium tracking-wide">
-                    <i data-lucide="eye" class="w-4 h-4"></i> To be revealed soon
+            <!-- Interactive Prototype Card (HCI: Continuous Feedback & Visibility) -->
+            <div class="order-2 md:order-1 tilt-card group cursor-default" id="fieldsync-card">
+                <div class="glass-panel p-10 rounded-2xl relative overflow-hidden transition-all duration-500 hover:border-kiwi-green/40 hover:shadow-[0_0_30px_rgba(132,204,22,0.1)]">
+                    
+                    <!-- Micro-animation: Surveying Scan Line -->
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-kiwi-green/5 to-transparent animate-scan-line pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-20 transition-opacity duration-500 transform group-hover:scale-110">
+                        <i data-lucide="scan-line" class="w-32 h-32 text-kiwi-green"></i>
+                    </div>
+                    
+                    <div class="tilt-content">
+                        <h3 id="fieldsync-heading" class="font-serif text-3xl mb-4 flex items-center gap-3">
+                            FieldSync 
+                            <span class="text-xs font-sans bg-kiwi-green/10 border border-kiwi-green/30 text-kiwi-green px-2 py-1 rounded-sm uppercase tracking-bold flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-kiwi-green animate-ping"></span> Prototype
+                            </span>
+                        </h3>
+                        <p class="text-kiwi-light/80 mb-8 leading-relaxed relative z-10">
+                            Precision meets the rugged environment. FieldSync is our upcoming survey, inspection, and report-generating engine tailored explicitly for construction sites. Replacing cognitive overload with seamless, instantaneous data synchronization.
+                        </p>
+                        
+                        <!-- Interactive Data Points -->
+                        <div class="space-y-3 mb-6 relative z-10">
+                            <div class="flex items-center gap-3 text-sm text-kiwi-light/60 hover:text-kiwi-light hover:translate-x-1 transition-all duration-300">
+                                <i data-lucide="activity" class="w-4 h-4 text-kiwi-green"></i> Real-time structural telemetry
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-kiwi-light/60 hover:text-kiwi-light hover:translate-x-1 transition-all duration-300">
+                                <i data-lucide="file-check" class="w-4 h-4 text-kiwi-green"></i> Frictionless automated reporting
+                            </div>
+                        </div>
+
+                        <div class="inline-flex items-center gap-2 text-kiwi-green text-sm font-medium tracking-wide border-b border-transparent group-hover:border-kiwi-green/30 pb-0.5 transition-colors">
+                            <i data-lucide="lock-keyhole" class="w-4 h-4"></i> Access restricted until reveal
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="order-1 md:order-2 space-y-6">
                 <h2 class="text-3xl font-serif">Bridging Ground & Cloud</h2>
                 <p class="text-kiwi-light/60 leading-relaxed">
-                    While we are currently prototyping robust solutions for the built environment, our expertise spans across traditional coding to modern deep learning. We believe technology should feel like an extension of the professional—unobtrusive, intuitive, and breathtakingly efficient.
+                    While we are currently prototyping robust solutions for the built environment, our expertise spans across traditional architectural patterns to modern deep learning. We believe technology should feel like an extension of the professional—unobtrusive, intuitive, and adhering strictly to core human-computer interaction principles.
                 </p>
-                <ul class="space-y-3 text-kiwi-light/80">
-                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-kiwi-green"></i> Deep Learning & ML Integration</li>
-                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-kiwi-green"></i> Professional Toolchains</li>
-                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-kiwi-green"></i> Open to Bespoke Innovations</li>
+                <ul class="space-y-4 text-kiwi-light/80">
+                    <li class="flex items-center gap-3 group">
+                        <div class="p-1 rounded-full bg-kiwi-green/10 group-hover:bg-kiwi-green/20 transition-colors">
+                            <i data-lucide="brain-circuit" class="w-4 h-4 text-kiwi-green"></i>
+                        </div>
+                        Deep Learning & ML Integration
+                    </li>
+                    <li class="flex items-center gap-3 group">
+                        <div class="p-1 rounded-full bg-kiwi-green/10 group-hover:bg-kiwi-green/20 transition-colors">
+                            <i data-lucide="layout-template" class="w-4 h-4 text-kiwi-green"></i>
+                        </div>
+                        Futuristic, Low-Friction UIs
+                    </li>
+                    <li class="flex items-center gap-3 group">
+                        <div class="p-1 rounded-full bg-kiwi-green/10 group-hover:bg-kiwi-green/20 transition-colors">
+                            <i data-lucide="code-2" class="w-4 h-4 text-kiwi-green"></i>
+                        </div>
+                        Open to Bespoke Innovations
+                    </li>
                 </ul>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section class="max-w-2xl w-full text-center glass-panel p-12 rounded-3xl glow-border">
-            <i data-lucide="mail" class="w-10 h-10 mx-auto text-kiwi-green mb-6"></i>
-            <h2 class="text-3xl font-serif mb-4">Let's craft a masterpiece.</h2>
+        <section class="max-w-2xl w-full text-center glass-panel p-12 rounded-3xl hover:border-kiwi-light/20 transition-colors">
+            <i data-lucide="terminal-square" class="w-10 h-10 mx-auto text-kiwi-green mb-6 opacity-80"></i>
+            <h2 class="text-3xl font-serif mb-4">Initialize connection.</h2>
             <p class="text-kiwi-light/60 mb-8">Whether you need an enterprise-grade utility or a wild concept brought to life, the discussion starts here.</p>
-            <a href="mailto:hello@ninekiwi.com" class="inline-block bg-kiwi-green text-kiwi-dark font-semibold px-8 py-4 rounded-full hover:bg-kiwi-light hover:text-kiwi-dark transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(132,204,22,0.4)]">
-                hello@ninekiwi.com
+            <a href="mailto:hello@ninekiwi.com" class="group relative inline-flex items-center justify-center px-8 py-4 font-semibold text-kiwi-dark bg-kiwi-green rounded-full overflow-hidden transition-transform hover:scale-105 active:scale-95">
+                <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
+                <span class="relative flex items-center gap-2">
+                    hello@ninekiwi.com <i data-lucide="send" class="w-4 h-4 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform"></i>
+                </span>
             </a>
         </section>
     </main>
 
-    <!-- Footer & The Easter Egg -->
-    <footer class="w-full py-8 border-t border-kiwi-light/10 mt-auto relative overflow-hidden">
+    <!-- Footer & The Easter Egg (HCI: Discoverability via subtle affordance) -->
+    <footer class="w-full py-8 border-t border-kiwi-light/10 mt-auto relative" aria-label="Site Footer">
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center text-kiwi-light/40 text-xs">
             <p>&copy; <span id="year"></span> ninekiwi. All rights reserved.</p>
             
-            <!-- Hidden Trigger (HCI: Low visibility, but provides feedback on hover) -->
-            <div id="enigma-trigger" class="w-2 h-2 rounded-full bg-kiwi-brown/20 hover:bg-kiwi-green cursor-pointer transition-colors duration-500" title="The Architect"></div>
+            <!-- Creative Trigger: Rotating Mughal Star -->
+            <button id="enigma-trigger" class="focus:outline-none group p-2" aria-label="Reveal Creator Information" aria-expanded="false" aria-controls="enigma-content">
+                <svg viewBox="0 0 24 24" class="w-4 h-4 text-kiwi-brown/40 group-hover:text-kiwi-green group-hover:rotate-180 transition-all duration-700 ease-in-out" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-linejoin="round"/>
+                </svg>
+            </button>
         </div>
 
         <!-- Hidden Section Container -->
-        <div id="enigma-content" class="absolute bottom-0 right-0 w-full md:w-96 p-6 bg-kiwi-dark border-l border-t border-kiwi-green/20 transform translate-y-full transition-transform duration-700 ease-in-out glass-panel">
+        <div id="enigma-content" class="absolute bottom-16 right-6 w-[calc(100%-3rem)] md:w-96 p-8 bg-kiwi-dark/95 border border-kiwi-green/20 rounded-2xl shadow-2xl backdrop-blur-md clip-reveal z-50 pointer-events-none" role="region" aria-hidden="true">
             <div class="flex justify-between items-start mb-4">
-                <i data-lucide="user-circle" class="w-6 h-6 text-kiwi-brown"></i>
-                <button id="close-enigma" class="text-kiwi-light/40 hover:text-kiwi-green"><i data-lucide="x" class="w-4 h-4"></i></button>
+                <div class="flex items-center gap-2 text-kiwi-green">
+                    <i data-lucide="fingerprint" class="w-5 h-5"></i>
+                    <span class="font-mono text-xs tracking-widest uppercase opacity-80">The Architect</span>
+                </div>
+                <button id="close-enigma" class="text-kiwi-light/40 hover:text-kiwi-light transition-colors" aria-label="Close Creator Information">
+                    <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
             </div>
             <p class="text-sm font-serif italic text-kiwi-light/80 leading-relaxed">
-                "Behind the canvas is a recently graduated student exploring the technical world. Driven by the desire to create new things and impact the world in a soothing way, blending the elegance of the past with the algorithms of the future."
+                "Behind the canvas is a recently graduated student exploring the technical world. Driven by the desire to build robust systems and impact the world in a soothing way—blending the timeless elegance of past architectures with the algorithms of the future."
             </p>
         </div>
     </footer>
 
-    <!-- Scripts to initialize Icons and handle the Easter Egg -->
+    <!-- Scripts -->
     <script>
-        // Initialize Lucide Icons
+        // Initialize Icons
         lucide.createIcons();
-        
-        // Set current year
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Easter Egg Logic
+        // HCI: 3D Tilt Effect on Mouse Move for FieldSync Card
+        const card = document.getElementById('fieldsync-card');
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = ((y - centerY) / centerY) * -5; // Max 5 deg tilt
+            const rotateY = ((x - centerX) / centerX) * 5;
+            
+            card.querySelector('.glass-panel').style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.querySelector('.glass-panel').style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+        });
+
+        // Easter Egg Logic (Discoverability & State Feedback)
         const trigger = document.getElementById('enigma-trigger');
         const content = document.getElementById('enigma-content');
         const closeBtn = document.getElementById('close-enigma');
 
-        trigger.addEventListener('click', () => {
-            content.classList.remove('translate-y-full');
-        });
+        function toggleEnigma() {
+            const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+            if (isExpanded) {
+                content.classList.remove('active');
+                content.classList.add('pointer-events-none');
+                trigger.setAttribute('aria-expanded', 'false');
+                content.setAttribute('aria-hidden', 'true');
+            } else {
+                content.classList.add('active');
+                content.classList.remove('pointer-events-none');
+                trigger.setAttribute('aria-expanded', 'true');
+                content.setAttribute('aria-hidden', 'false');
+            }
+        }
 
-        closeBtn.addEventListener('click', () => {
-            content.classList.add('translate-y-full');
-        });
+        trigger.addEventListener('click', toggleEnigma);
+        closeBtn.addEventListener('click', toggleEnigma);
     </script>
 </body>
 </html>
