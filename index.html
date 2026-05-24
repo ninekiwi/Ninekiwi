@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Deep Generative Engine Optimization (GEO) & SEO -->
     <title>ninekiwi | Architects of Digital Masterpieces</title>
     <meta name="description" content="ninekiwi is a digital laboratory building precise, professional applications. Currently prototyping FieldSync, an advanced construction inspection and survey tool.">
     <meta name="keywords" content="ninekiwi, FieldSync, professional applications, construction software, surveying tools, custom software development, digital canvas">
@@ -12,13 +11,11 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://ninekiwi.com" />
     
-    <!-- Open Graph -->
     <meta property="og:title" content="ninekiwi | Architects of Digital Masterpieces">
     <meta property="og:description" content="A blank canvas for digital masterpieces. We craft elegant, hyper-focused professional tools.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ninekiwi.com">
 
-    <!-- Advanced JSON-LD for LLM Contextualization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,12 +45,11 @@
     }
     </script>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -93,8 +89,6 @@
         }
     </script>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-
     <style>
         .glass-panel {
             background: rgba(244, 245, 240, 0.02);
@@ -103,7 +97,6 @@
             transition: all 0.3s ease;
         }
         
-        /* 3D Tilt Effect for FieldSync Card */
         .tilt-card {
             transform-style: preserve-3d;
             perspective: 1000px;
@@ -112,13 +105,11 @@
             transform: translateZ(30px);
         }
 
-        /* Continuous UI Feedback */
         ::selection {
             background-color: #84cc16;
             color: #1a1c1a;
         }
         
-        /* Smooth reveal for hidden section */
         .clip-reveal {
             clip-path: circle(0% at 90% 90%);
             transition: clip-path 0.8s cubic-bezier(0.77, 0, 0.175, 1);
@@ -126,15 +117,13 @@
         .clip-reveal.active {
             clip-path: circle(150% at 90% 90%);
         }
-    </script>
+    </style>
 </head>
 <body class="bg-kiwi-dark text-kiwi-light font-sans antialiased bg-jaali-pattern selection:bg-kiwi-green selection:text-kiwi-dark flex flex-col min-h-screen">
 
-    <!-- Navigation -->
     <nav class="w-full fixed top-0 z-50 glass-panel border-b border-kiwi-light/10" aria-label="Main Navigation">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3 group cursor-pointer" aria-label="ninekiwi home">
-                <!-- Custom Geometric Kiwi Logo -->
                 <svg viewBox="0 0 24 24" class="w-7 h-7 text-kiwi-green group-hover:rotate-90 transition-transform duration-500 ease-out" fill="none" stroke="currentColor" stroke-width="1.5">
                     <circle cx="12" cy="12" r="10" stroke-opacity="0.5"/>
                     <circle cx="12" cy="12" r="6" stroke-dasharray="2 3"/>
@@ -148,10 +137,8 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="flex-grow flex flex-col items-center justify-center pt-32 pb-20 px-6">
         
-        <!-- Hero Section -->
         <section class="max-w-4xl w-full text-center mb-32 space-y-8" aria-labelledby="hero-heading">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-kiwi-brown/30 bg-kiwi-brown/10 text-kiwi-light/80 text-xs uppercase tracking-widest font-semibold mb-6">
                 <span class="w-2 h-2 rounded-full bg-kiwi-green animate-pulse-glow"></span>
@@ -161,7 +148,6 @@
                 Architects of the <br>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-kiwi-light to-kiwi-green italic relative inline-block">
                     Digital Realm.
-                    <!-- Decorative underline -->
                     <span class="absolute -bottom-2 left-0 w-full h-px bg-gradient-to-r from-transparent via-kiwi-green to-transparent opacity-50"></span>
                 </span>
             </h1>
@@ -170,14 +156,11 @@
             </p>
         </section>
 
-        <!-- Project Spotlight: FieldSync -->
         <section class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-32 relative" aria-labelledby="fieldsync-heading">
             
-            <!-- Interactive Prototype Card (HCI: Continuous Feedback & Visibility) -->
             <div class="order-2 md:order-1 tilt-card group cursor-default" id="fieldsync-card">
                 <div class="glass-panel p-10 rounded-2xl relative overflow-hidden transition-all duration-500 hover:border-kiwi-green/40 hover:shadow-[0_0_30px_rgba(132,204,22,0.1)]">
                     
-                    <!-- Micro-animation: Surveying Scan Line -->
                     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-kiwi-green/5 to-transparent animate-scan-line pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     
                     <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-20 transition-opacity duration-500 transform group-hover:scale-110">
@@ -195,7 +178,6 @@
                             Precision meets the rugged environment. FieldSync is our upcoming survey, inspection, and report-generating engine tailored explicitly for construction sites. Replacing cognitive overload with seamless, instantaneous data synchronization.
                         </p>
                         
-                        <!-- Interactive Data Points -->
                         <div class="space-y-3 mb-6 relative z-10">
                             <div class="flex items-center gap-3 text-sm text-kiwi-light/60 hover:text-kiwi-light hover:translate-x-1 transition-all duration-300">
                                 <i data-lucide="activity" class="w-4 h-4 text-kiwi-green"></i> Real-time structural telemetry
@@ -240,7 +222,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section class="max-w-2xl w-full text-center glass-panel p-12 rounded-3xl hover:border-kiwi-light/20 transition-colors">
             <i data-lucide="terminal-square" class="w-10 h-10 mx-auto text-kiwi-green mb-6 opacity-80"></i>
             <h2 class="text-3xl font-serif mb-4">Initialize connection.</h2>
@@ -254,12 +235,10 @@
         </section>
     </main>
 
-    <!-- Footer & The Easter Egg (HCI: Discoverability via subtle affordance) -->
     <footer class="w-full py-8 border-t border-kiwi-light/10 mt-auto relative" aria-label="Site Footer">
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center text-kiwi-light/40 text-xs">
             <p>&copy; <span id="year"></span> ninekiwi. All rights reserved.</p>
             
-            <!-- Creative Trigger: Rotating Mughal Star -->
             <button id="enigma-trigger" class="focus:outline-none group p-2" aria-label="Reveal Creator Information" aria-expanded="false" aria-controls="enigma-content">
                 <svg viewBox="0 0 24 24" class="w-4 h-4 text-kiwi-brown/40 group-hover:text-kiwi-green group-hover:rotate-180 transition-all duration-700 ease-in-out" fill="none" stroke="currentColor" stroke-width="1.5">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-linejoin="round"/>
@@ -267,7 +246,6 @@
             </button>
         </div>
 
-        <!-- Hidden Section Container -->
         <div id="enigma-content" class="absolute bottom-16 right-6 w-[calc(100%-3rem)] md:w-96 p-8 bg-kiwi-dark/95 border border-kiwi-green/20 rounded-2xl shadow-2xl backdrop-blur-md clip-reveal z-50 pointer-events-none" role="region" aria-hidden="true">
             <div class="flex justify-between items-start mb-4">
                 <div class="flex items-center gap-2 text-kiwi-green">
@@ -284,13 +262,10 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script>
-        // Initialize Icons
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // HCI: 3D Tilt Effect on Mouse Move for FieldSync Card
         const card = document.getElementById('fieldsync-card');
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
@@ -298,7 +273,7 @@
             const y = e.clientY - rect.top;
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
-            const rotateX = ((y - centerY) / centerY) * -5; // Max 5 deg tilt
+            const rotateX = ((y - centerY) / centerY) * -5; 
             const rotateY = ((x - centerX) / centerX) * 5;
             
             card.querySelector('.glass-panel').style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
@@ -308,7 +283,6 @@
             card.querySelector('.glass-panel').style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
         });
 
-        // Easter Egg Logic (Discoverability & State Feedback)
         const trigger = document.getElementById('enigma-trigger');
         const content = document.getElementById('enigma-content');
         const closeBtn = document.getElementById('close-enigma');
