@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ninekiwi | Secure Gateway</title>
+    <meta name="description" content="Secure payment processing for ninekiwi digital masterpiece architectures.">
+    <link rel="canonical" href="https://ninekiwi.com/Payments.html" />
+    
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kiwi: {
+                            dark: '#1a1c1a',   
+                            light: '#f4f5f0',  
+                            green: '#84cc16',  
+                            brown: '#5c2e0e',  
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], 
+                        serif: ['Playfair Display', 'serif'], 
+                    },
+                    backgroundImage: {
+                        'jaali-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%2384cc16' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+                    },
+                    keyframes: {
+                        pulseGlow: {
+                            '0%, 100%': { opacity: 1, transform: 'scale(1)' },
+                            '50%': { opacity: .7, transform: 'scale(1.05)' },
+                        }
+                    },
+                    animation: {
+                        'pulse-glow': 'pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-panel {
+            background: rgba(244, 245, 240, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(244, 245, 240, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .input-field {
+            background: rgba(26, 28, 26, 0.6);
+            border: 1px solid rgba(244, 245, 240, 0.1);
+            color: #f4f5f0;
+            transition: all 0.3s ease;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #84cc16;
+            box-shadow: 0 0 10px rgba(132, 204, 22, 0.1);
+        }
+
+        .input-field::placeholder {
+            color: rgba(244, 245, 240, 0.3);
+        }
+
+        /* Select styling for dark theme */
+        select.input-field option {
+            background-color: #1a1c1a;
+            color: #f4f5f0;
+        }
+
+        ::selection {
+            background-color: #84cc16;
+            color: #1a1c1a;
+        }
+        
+        .clip-reveal {
+            clip-path: circle(0% at 90% 90%);
+            transition: clip-path 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        .clip-reveal.active {
+            clip-path: circle(150% at 90% 90%);
+        }
+    </style>
+</head>
+<body class="bg-kiwi-dark text-kiwi-light font-sans antialiased bg-jaali-pattern selection:bg-kiwi-green selection:text-kiwi-dark flex flex-col min-h-screen">
+
+    <nav class="w-full fixed top-0 z-50 glass-panel border-b border-kiwi-light/10" aria-label="Main Navigation">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group cursor-pointer" aria-label="ninekiwi home">
+                <img src="logo.png" alt="ninekiwi logo" class="w-7 h-7 group-hover:rotate-90 transition-transform duration-500 ease-out">
+                <span class="font-serif font-semibold text-xl tracking-wider">ninekiwi</span>
+            </a>
+            <a href="index.html" class="text-sm font-medium tracking-wide hover:text-kiwi-green transition-colors flex items-center gap-2 group">
+                <i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i> Return
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center justify-center pt-32 pb-20 px-6">
+        
+        <section class="max-w-4xl w-full text-center mb-16 space-y-4" aria-labelledby="payments-heading">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-kiwi-green/30 bg-kiwi-green/10 text-kiwi-green text-xs uppercase tracking-widest font-semibold mb-2">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+                Secure Gateway
+            </div>
+            <h1 id="payments-heading" class="text-4xl md:text-5xl font-serif text-kiwi-light">
+                Initialize Transaction.
+            </h1>
+            <p class="text-md text-kiwi-light/60 font-light max-w-xl mx-auto leading-relaxed">
+                Complete your transmission via our encrypted payment protocol. All architectural concepts and enterprise deployments begin here.
+            </p>
+        </section>
+
+        <section class="max-w-2xl w-full">
+            <div class="glass-panel p-8 md:p-12 rounded-3xl relative overflow-hidden group hover:border-kiwi-green/30 transition-colors duration-500 shadow-2xl">
+                
+                <form id="payment-form" class="space-y-8 relative z-10">
+                    <div class="space-y-5">
+                        <div class="flex items-center gap-2 text-kiwi-light/80 border-b border-kiwi-light/10 pb-2 mb-4">
+                            <i data-lucide="user" class="w-4 h-4 text-kiwi-green"></i>
+                            <h3 class="font-serif text-xl tracking-wide">Client Telemetry</h3>
+                        </div>
+                        
+                        <div>
+                            <label for="name" class="block text-xs uppercase tracking-widest text-kiwi-light/50 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required 
+                                class="input-field w-full px-4 py-3 rounded-xl"
+                                placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label for="email" class="block text-xs uppercase tracking-widest text-kiwi-light/50 mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" required 
+                                    class="input-field w-full px-4 py-3 rounded-xl"
+                                    placeholder="node@example.com">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-xs uppercase tracking-widest text-kiwi-light/50 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required 
+                                    class="input-field w-full px-4 py-3 rounded-xl"
+                                    placeholder="+1 (555) 000-0000">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-5">
+                        <div class="flex items-center gap-2 text-kiwi-light/80 border-b border-kiwi-light/10 pb-2 mb-4">
+                            <i data-lucide="credit-card" class="w-4 h-4 text-kiwi-green"></i>
+                            <h3 class="font-serif text-xl tracking-wide">Transaction Vector</h3>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label for="amount" class="block text-xs uppercase tracking-widest text-kiwi-light/50 mb-2">Amount</label>
+                                <input type="number" id="amount" name="amount" min="1" required 
+                                    class="input-field w-full px-4 py-3 rounded-xl font-mono"
+                                    placeholder="0.00">
+                            </div>
+                            <div>
+                                <label for="currency" class="block text-xs uppercase tracking-widest text-kiwi-light/50 mb-2">Currency</label>
+                                <select id="currency" name="currency" 
+                                    class="input-field w-full px-4 py-3 rounded-xl font-mono cursor-pointer appearance-none">
+                                    <option value="INR">INR (₹)</option>
+                                    <option value="USD">USD ($)</option>
+                                    <option value="EUR">EUR (€)</option>
+                                    <option value="GBP">GBP (£)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="description" class="block text-xs uppercase tracking-widest text-kiwi-light/50 mb-2">Operation Description</label>
+                            <input type="text" id="description" name="description" 
+                                class="input-field w-full px-4 py-3 rounded-xl"
+                                placeholder="Service rendering / Scope of work">
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3 bg-kiwi-dark/30 p-4 rounded-xl border border-kiwi-light/5">
+                        <input type="checkbox" id="terms" name="terms" required 
+                            class="mt-1 rounded border-kiwi-light/20 bg-kiwi-dark text-kiwi-green focus:ring-kiwi-green focus:ring-offset-kiwi-dark cursor-pointer">
+                        <label for="terms" class="text-sm text-kiwi-light/60 leading-relaxed cursor-pointer">
+                            I verify authorization for this transaction and agree to the 
+                            <a href="Terms&Conditions.html" class="text-kiwi-green hover:text-kiwi-light transition-colors border-b border-kiwi-green/30 pb-0.5">Terms & Conditions</a> 
+                            established by ninekiwi.
+                        </label>
+                    </div>
+                    
+                    <button type="submit" id="pay-btn" 
+                        class="w-full group relative inline-flex items-center justify-center px-8 py-4 font-semibold text-kiwi-dark bg-kiwi-green rounded-xl overflow-hidden transition-all hover:scale-[1.02] active:scale-[0.98]">
+                        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-10"></span>
+                        <span class="relative flex items-center gap-2">
+                            Execute Transfer <i data-lucide="zap" class="w-4 h-4 fill-kiwi-dark"></i>
+                        </span>
+                    </button>
+                </form>
+
+                <div class="mt-8 pt-6 border-t border-kiwi-light/10 flex flex-wrap justify-center gap-6 text-xs text-kiwi-light/40 font-medium tracking-wide uppercase">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="lock" class="w-3.5 h-3.5 text-kiwi-green"></i> 256-bit Encryption
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-kiwi-green"></i> Verified Node
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full py-8 border-t border-kiwi-light/10 mt-auto relative" aria-label="Site Footer">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-kiwi-light/40 text-xs">
+            <p>&copy; <span id="year"></span> ninekiwi. All rights reserved.</p>
+            
+            <div class="flex items-center gap-6">
+                <a href="Terms&Conditions.html" class="hover:text-kiwi-green transition-colors">Terms & Conditions</a>
+                <a href="privacy-policy.html" class="hover:text-kiwi-green transition-colors">Privacy Policy</a>
+                <a href="Payments.html" class="hover:text-kiwi-green transition-colors">Payments</a>
+            </div>
+            
+            <button id="enigma-trigger" class="focus:outline-none group p-2" aria-label="Reveal Creator Information" aria-expanded="false" aria-controls="enigma-content">
+                <svg viewBox="0 0 24 24" class="w-4 h-4 text-kiwi-brown/40 group-hover:text-kiwi-green group-hover:rotate-180 transition-all duration-700 ease-in-out" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <div id="enigma-content" class="absolute bottom-16 right-6 w-[calc(100%-3rem)] md:w-96 p-8 bg-kiwi-dark/95 border border-kiwi-green/20 rounded-2xl shadow-2xl backdrop-blur-md clip-reveal z-50 pointer-events-none" role="region" aria-hidden="true">
+            <div class="flex justify-between items-start mb-4">
+                <div class="flex items-center gap-2 text-kiwi-green">
+                    <i data-lucide="fingerprint" class="w-5 h-5"></i>
+                    <span class="font-mono text-xs tracking-widest uppercase opacity-80">The Architect</span>
+                </div>
+                <button id="close-enigma" class="text-kiwi-light/40 hover:text-kiwi-light transition-colors" aria-label="Close Creator Information">
+                    <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+            </div>
+            <p class="text-sm font-serif italic text-kiwi-light/80 leading-relaxed">
+                "Behind the canvas is a recently graduated student exploring the technical world. Driven by the desire to build robust systems and impact the world in a soothing way—blending the timeless elegance of past architectures with the algorithms of the future."
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Enigma Interaction
+        const trigger = document.getElementById('enigma-trigger');
+        const content = document.getElementById('enigma-content');
+        const closeBtn = document.getElementById('close-enigma');
+
+        function toggleEnigma() {
+            const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+            if (isExpanded) {
+                content.classList.remove('active');
+                content.classList.add('pointer-events-none');
+                trigger.setAttribute('aria-expanded', 'false');
+                content.setAttribute('aria-hidden', 'true');
+            } else {
+                content.classList.add('active');
+                content.classList.remove('pointer-events-none');
+                trigger.setAttribute('aria-expanded', 'true');
+                content.setAttribute('aria-hidden', 'false');
+            }
+        }
+
+        trigger.addEventListener('click', toggleEnigma);
+        closeBtn.addEventListener('click', toggleEnigma);
+
+        // Payment Form Submission
+        document.addEventListener("DOMContentLoaded", () => {
+            const paymentForm = document.getElementById('payment-form');
+            paymentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const amount = document.getElementById('amount').value;
+                const currency = document.getElementById('currency').value;
+                const description = document.getElementById('description').value;
+                
+                // Validate form
+                if (!name || !email || !phone || !amount || amount <= 0) {
+                    alert("System Notice: Please fill in all required fields with valid telemetry.");
+                    return;
+                }
+                
+                // Initialize Razorpay
+                var options = {
+                    key: "rzp_live_RPI96kSeZwCSrB", // Replace with your actual Razorpay Key ID
+                    amount: amount * 100, // Amount in sub-units
+                    currency: currency,
+                    name: "ninekiwi",
+                    description: description || "System Initialization Payment",
+                    handler: function (response){
+                        alert("Transfer executed successfully. Hash ID: " + response.razorpay_payment_id);
+                        paymentForm.reset();
+                    },
+                    prefill: {
+                        name: name,
+                        email: email,
+                        contact: phone
+                    },
+                    theme: {
+                        color: "#84cc16" // Matches kiwi-green
+                    }
+                };
+                
+                var rzp1 = new Razorpay(options);
+                rzp1.open();
+            });
+        });
+    </script>
+</body>
+</html>

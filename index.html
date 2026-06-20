@@ -70,7 +70,7 @@
                         serif: ['Playfair Display', 'serif'], 
                     },
                     backgroundImage: {
-                        'jaali-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%2384cc16' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+                        'jaali-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%2384cc16' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E\")",
                     },
                     keyframes: {
                         scan: {
@@ -126,7 +126,7 @@
     <nav class="w-full fixed top-0 z-50 glass-panel border-b border-kiwi-light/10" aria-label="Main Navigation">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3 group cursor-pointer" aria-label="ninekiwi home">
-                <img src="logo.png" alt="ninekiwi logo" class="w-7 h-7 group-hover:rotate-90 transition-transform duration-500 ease-out">
+                <img src="logo.png" alt="ninekiwi logo" class="w-10 h-10 md:w-12 md:h-12 group-hover:rotate-90 transition-transform duration-500 ease-out">
                 <span class="font-serif font-semibold text-xl tracking-wider">ninekiwi</span>
             </div>
             <a href="mailto:hello@ninekiwi.com" class="text-sm font-medium tracking-wide hover:text-kiwi-green transition-colors flex items-center gap-2 group">
@@ -156,40 +156,43 @@
 
         <section class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-32 relative" aria-labelledby="fieldsync-heading">
             
-            <div class="order-2 md:order-1 tilt-card group cursor-default" id="fieldsync-card">
-                <div class="glass-panel p-10 rounded-2xl relative overflow-hidden transition-all duration-500 hover:border-kiwi-green/40 hover:shadow-[0_0_30px_rgba(132,204,22,0.1)]">
-                    
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-kiwi-green/5 to-transparent animate-scan-line pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    
-                    <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-20 transition-opacity duration-500 transform group-hover:scale-110">
-                        <i data-lucide="scan-line" class="w-32 h-32 text-kiwi-green"></i>
-                    </div>
-                    
-                    <div class="tilt-content">
-                        <h3 id="fieldsync-heading" class="font-serif text-3xl mb-4 flex items-center gap-3">
-                            FieldSync 
-                            <span class="text-xs font-sans bg-kiwi-green/10 border border-kiwi-green/30 text-kiwi-green px-2 py-1 rounded-sm uppercase tracking-bold flex items-center gap-1">
-                                <span class="w-1.5 h-1.5 rounded-full bg-kiwi-green animate-ping"></span> Prototype
-                            </span>
-                        </h3>
-                        <p class="text-kiwi-light/80 mb-8 leading-relaxed relative z-10">
-                            Precision meets the rugged environment. FieldSync is our upcoming survey, inspection, and report-generating engine tailored explicitly for construction sites. Replacing cognitive overload with seamless, instantaneous data synchronization.
-                        </p>
+            <div class="order-2 md:order-1 tilt-card group" id="fieldsync-card">
+                <a href="https://fieldsync-e3fd7.web.app/" target="_blank" rel="noopener noreferrer" class="block">
+                    <div class="glass-panel p-10 rounded-2xl relative overflow-hidden transition-all duration-500 hover:border-kiwi-green/40 hover:shadow-[0_0_30px_rgba(132,204,22,0.1)]">
                         
-                        <div class="space-y-3 mb-6 relative z-10">
-                            <div class="flex items-center gap-3 text-sm text-kiwi-light/60 hover:text-kiwi-light hover:translate-x-1 transition-all duration-300">
-                                <i data-lucide="activity" class="w-4 h-4 text-kiwi-green"></i> Real-time structural telemetry
-                            </div>
-                            <div class="flex items-center gap-3 text-sm text-kiwi-light/60 hover:text-kiwi-light hover:translate-x-1 transition-all duration-300">
-                                <i data-lucide="file-check" class="w-4 h-4 text-kiwi-green"></i> Frictionless automated reporting
-                            </div>
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-kiwi-green/5 to-transparent animate-scan-line pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                        <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-20 transition-opacity duration-500 transform group-hover:scale-110 pointer-events-none">
+                            <i data-lucide="scan-line" class="w-32 h-32 text-kiwi-green"></i>
                         </div>
 
-                        <div class="inline-flex items-center gap-2 text-kiwi-green text-sm font-medium tracking-wide border-b border-transparent group-hover:border-kiwi-green/30 pb-0.5 transition-colors">
-                            <i data-lucide="lock-keyhole" class="w-4 h-4"></i> Access restricted until reveal
+                        <div class="tilt-content relative z-20">
+                            <h3 id="fieldsync-heading" class="font-serif text-3xl mb-4 flex items-center gap-3">
+                                FieldSync
+                                <span class="text-xs font-sans bg-kiwi-green/10 border border-kiwi-green/30 text-kiwi-green px-2 py-1 rounded-sm uppercase tracking-bold flex items-center gap-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-kiwi-green animate-ping"></span> Prototype
+                                </span>
+                            </h3>
+
+                            <p class="text-kiwi-light/80 mb-8 leading-relaxed">
+                                Precision meets the rugged environment. FieldSync is our upcoming survey, inspection, and report-generating engine tailored explicitly for construction sites. Replacing cognitive overload with seamless, instantaneous data synchronization.
+                            </p>
+
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center gap-3 text-sm text-kiwi-light/60">
+                                    <i data-lucide="activity" class="w-4 h-4 text-kiwi-green"></i> Real-time structural telemetry
+                                </div>
+                                <div class="flex items-center gap-3 text-sm text-kiwi-light/60">
+                                    <i data-lucide="file-check" class="w-4 h-4 text-kiwi-green"></i> Frictionless automated reporting
+                                </div>
+                            </div>
+
+                            <div class="inline-flex items-center gap-2 text-kiwi-green text-sm font-medium tracking-wide">
+                                <i data-lucide="external-link" class="w-4 h-4"></i> Under Development — View Initial Prototype
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="order-1 md:order-2 space-y-6">
@@ -235,8 +238,12 @@
 
     <footer class="w-full py-8 border-t border-kiwi-light/10 mt-auto relative" aria-label="Site Footer">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-kiwi-light/40 text-xs">
-            <p>&copy; <span id="year"></span> ninekiwi. All rights reserved.</p>
             
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="ninekiwi logo" class="w-6 h-6 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                <p>&copy; <span id="year"></span> ninekiwi. All rights reserved.</p>
+            </div>
+
             <div class="flex items-center gap-6">
                 <a href="Terms&Conditions.html" class="hover:text-kiwi-green transition-colors">Terms & Conditions</a>
                 <a href="privacy-policy.html" class="hover:text-kiwi-green transition-colors">Privacy Policy</a>

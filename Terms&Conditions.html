@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms and Conditions for ninekiwi digital architectures and platform.">
+    
+    <title>ninekiwi | Terms & Conditions</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kiwi: {
+                            dark: '#1a1c1a',   
+                            light: '#f4f5f0',  
+                            green: '#84cc16',  
+                            brown: '#5c2e0e',  
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], 
+                        serif: ['Playfair Display', 'serif'], 
+                    },
+                    backgroundImage: {
+                        'jaali-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%2384cc16' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-panel {
+            background: rgba(244, 245, 240, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(244, 245, 240, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        ::selection {
+            background-color: #84cc16;
+            color: #1a1c1a;
+        }
+        
+        .clip-reveal {
+            clip-path: circle(0% at 90% 90%);
+            transition: clip-path 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        .clip-reveal.active {
+            clip-path: circle(150% at 90% 90%);
+        }
+    </style>
+</head>
+<body class="bg-kiwi-dark text-kiwi-light font-sans antialiased bg-jaali-pattern selection:bg-kiwi-green selection:text-kiwi-dark flex flex-col min-h-screen">
+
+    <nav class="w-full fixed top-0 z-50 glass-panel border-b border-kiwi-light/10" aria-label="Main Navigation">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group cursor-pointer" aria-label="ninekiwi home">
+                <img src="logo.png" alt="ninekiwi logo" class="w-7 h-7 group-hover:rotate-90 transition-transform duration-500 ease-out">
+                <span class="font-serif font-semibold text-xl tracking-wider">ninekiwi</span>
+            </a>
+            <a href="index.html" class="text-sm font-medium tracking-wide hover:text-kiwi-green transition-colors flex items-center gap-2 group">
+                <i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i> Return
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center pt-32 pb-20 px-6">
+        
+        <div class="max-w-6xl w-full text-center mb-16 space-y-4">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-kiwi-green/30 bg-kiwi-green/10 text-kiwi-green text-xs uppercase tracking-widest font-semibold mb-2">
+                <i data-lucide="scale" class="w-4 h-4"></i> Legal Framework
+            </div>
+            <h1 class="text-4xl md:text-5xl font-serif text-kiwi-light">
+                Terms & Conditions.
+            </h1>
+            <p class="text-md text-kiwi-light/60 font-light max-w-xl mx-auto leading-relaxed">
+                Please review the architectural guidelines and operational parameters before initializing your connection with our services.
+            </p>
+        </div>
+
+        <div class="max-w-6xl w-full flex flex-col lg:flex-row gap-8">
+            <div class="lg:w-1/4">
+                <div class="glass-panel p-6 rounded-3xl sticky top-28 border border-kiwi-light/10">
+                    <h3 class="font-serif text-xl mb-4 text-kiwi-light">Contents</h3>
+                    <nav class="space-y-3 flex flex-col text-sm text-kiwi-light/60">
+                        <a href="#introduction" class="hover:text-kiwi-green transition-colors">1. Introduction</a>
+                        <a href="#eligibility" class="hover:text-kiwi-green transition-colors">2. Eligibility</a>
+                        <a href="#payments" class="hover:text-kiwi-green transition-colors">3. Payments</a>
+                        <a href="#services" class="hover:text-kiwi-green transition-colors">4. Use of Services</a>
+                        <a href="#ip" class="hover:text-kiwi-green transition-colors">5. Intellectual Property</a>
+                        <a href="#liability" class="hover:text-kiwi-green transition-colors">6. Limitation of Liability</a>
+                        <a href="#privacy" class="hover:text-kiwi-green transition-colors">7. Privacy</a>
+                        <a href="#termination" class="hover:text-kiwi-green transition-colors">8. Termination</a>
+                        <a href="#law" class="hover:text-kiwi-green transition-colors">9. Governing Law</a>
+                        <a href="#changes" class="hover:text-kiwi-green transition-colors">10. Changes to Terms</a>
+                        <a href="#contact" class="hover:text-kiwi-green transition-colors">11. Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="lg:w-3/4">
+                <div class="glass-panel p-8 md:p-12 rounded-3xl border border-kiwi-light/10 space-y-12">
+                    
+                    <section id="introduction" class="scroll-mt-28">
+                        <h2 class="text-2xl font-serif text-kiwi-green mb-4">1. Introduction</h2>
+                        <p class="text-kiwi-light/70 leading-relaxed mb-4">Welcome to ninekiwi, an open canvas for digital masterpieces and high-precision professional applications. By accessing or utilizing our platform and architecture, you agree to be bound by these Terms and Conditions. If you do not align with any part of these terms, please disconnect from our services immediately.</p>
+                    </section>
+
+                    <section id="eligibility" class="scroll-mt-28">
+                        <h2 class="text-2xl font-serif text-kiwi-green mb-4">2. Eligibility</h2>
+                        <p class="text-kiwi-light/70 leading-relaxed">You must be at least 18 years old and legally capable of entering into binding operational contracts to access our network. By initializing an account, you confirm that all telemetry provided is accurate, current, and complete.</p>
+                    </section>
+
+                    <section id="payments" class="scroll-mt-28">
+                        <h2 class="text-2xl font-serif text-kiwi-green mb-4">3. Payments</h2>
+                        <p class="text-kiwi-light/70 leading-relaxed mb-4">We deploy Razorpay as our trusted third-party secure gateway. By completing a transaction on ninekiwi, you consent to Razorpay's terms and privacy policies in tandem with ours.</p>
+                        <ul class="list-none space-y-3 text-kiwi-light/70 text-sm">
+                            <li class="flex items-start gap-3"><i data-lucide="chevron-right" class="w-4 h-4 text-kiwi-green mt-0.5"></i> Transmissions are supported in multiple currencies including INR, USD, EUR, and GBP.</li>
+                            <li class="flex items-start gap-3"><i data-lucide="chevron-right" class="w-4 h-4 text-kiwi-green mt-0.5"></i> We strictly do not store raw card credentials. All transactions are securely hashed and processed by Razorpay.</li>
+                        </ul>
+                    </section>
+
+                    <section id="services" class="scroll-mt-28">
+                        <h2 class="text-2xl font-serif text-kiwi-green mb-4">4. Use of Services</h2>
+                        <p class="text-kiwi-light/70 leading-relaxed">You agree to utilize the ninekiwi architecture ethically. Attempting unauthorized payload injections, breaching our systems, or engaging in activity that impairs our network infrastructure is strictly prohibited. Nodes found violating these terms will be terminated instantly.</p>
+                    </section>
+
+                    <section id="ip" class="scroll-mt-28">
+                        <h2 class="text-2xl font-serif text-kiwi-green mb-4">5. Intellectual Property</h2>
+                        <p class="text-kiwi-light/70 leading-relaxed">All core repositories, trademarks, designs, and proprietary technologies on the ninekiwi platform remain the sole property of ninekiwi. Unauthorized cloning, distribution, or reverse-engineering of our masterpieces is forbidden.</p>
+                    </section>
+
+                    <section id="liability" class="scroll-mt-28">
+                        <h2 class="text-2xl font-serif text-kiwi-green mb-4">6. Limitation of Liability</h2>
+                        <p class="text-kiwi-light/70 leading-relaxed">ninekiwi is engineered on an "as-is" basis. To the maximum extent permitted by code and law, we assume no liability for any direct, indirect, or consequential damages including data corruption or financial losses resulting from utilizing our framework.</p>
+                    </section>
+
+                    <section id="privacy" class="scroll-mt-28">
+                        <h2 class="text-2xl font-serif text-kiwi-green mb-4">7. Privacy</h2>
+                        <p class="text-kiwi-light/70 leading-relaxed">Your data packets are handled strictly in accordance with our <a href="privacy-policy.html" class="text-kiwi-green hover:underline">Privacy Policy</a>. By syncing with ninekiwi, you consent to the processing of your data as outlined in that protocol.</p>
+                    </section>
+
+                    <section id="termination" class="scroll-mt-28">
+                        <h2 class="text-2xl font-serif text-kiwi-green mb-4">8. Termination</h2>
+                        <p class="text-kiwi-light/70 leading-relaxed">We reserve the right to sever connections to accounts that violate these parameters or engage in fraudulent network activities. Upon termination, your access tokens will be immediately revoked.</p>
+                    </section>
+
+                    <section id="law" class="scroll-mt-28">
+                        <h2 class="text-2xl font-serif text-kiwi-green mb-4">9. Governing Law</h2>
+                        <p class="text-kiwi-light/70 leading-relaxed">These Terms shall be interpreted and governed by the legal frameworks of India. Any disputes arising from your use of the digital realm will fall under the exclusive jurisdiction of the courts of India.</p>
+                    </section>
+
+                    <section id="changes" class="scroll-mt-28">
+                        <h2 class="text-2xl font-serif text-kiwi-green mb-4">10. Changes to Terms</h2>
+                        <p class="text-kiwi-light/70 leading-relaxed">We retain the authority to push updates to these Terms and Conditions at any time. Material changes will be communicated via your registered node (email) or through our interface.</p>
+                    </section>
+
+                    <section id="contact" class="scroll-mt-28">
+                        <h2 class="text-2xl font-serif text-kiwi-green mb-4">11. Contact Us</h2>
+                        <p class="text-kiwi-light/70 leading-relaxed mb-4">For system inquiries or clarification regarding these Terms:</p>
+                        <div class="bg-kiwi-dark/50 p-4 rounded-xl border border-kiwi-light/5 inline-block">
+                            <p class="flex items-center gap-3 text-sm text-kiwi-light/80">
+                                <i data-lucide="mail" class="w-4 h-4 text-kiwi-green"></i> hello@ninekiwi.com
+                            </p>
+                        </div>
+                    </section>
+
+                    <div class="mt-12 pt-8 border-t border-kiwi-light/10 text-center">
+                        <p class="text-kiwi-light/60 mb-6 italic text-sm">By engaging our systems, you verify that you have parsed, comprehended, and agreed to execute these Terms and Conditions.</p>
+                        <a href="index.html" class="inline-flex items-center justify-center bg-kiwi-green text-kiwi-dark font-semibold py-3 px-8 rounded-full transition-transform hover:scale-105 group">
+                            <i data-lucide="arrow-left" class="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform"></i> Return to Main Hub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-8 border-t border-kiwi-light/10 mt-auto relative" aria-label="Site Footer">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-kiwi-light/40 text-xs">
+            <p>&copy; <span id="year"></span> ninekiwi. All rights reserved.</p>
+            
+            <div class="flex items-center gap-6">
+                <a href="Terms&Conditions.html" class="hover:text-kiwi-green transition-colors">Terms & Conditions</a>
+                <a href="privacy-policy.html" class="hover:text-kiwi-green transition-colors">Privacy Policy</a>
+                <a href="Payments.html" class="hover:text-kiwi-green transition-colors">Payments</a>
+            </div>
+            
+            <button id="enigma-trigger" class="focus:outline-none group p-2" aria-label="Reveal Creator Information" aria-expanded="false" aria-controls="enigma-content">
+                <svg viewBox="0 0 24 24" class="w-4 h-4 text-kiwi-brown/40 group-hover:text-kiwi-green group-hover:rotate-180 transition-all duration-700 ease-in-out" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <div id="enigma-content" class="absolute bottom-16 right-6 w-[calc(100%-3rem)] md:w-96 p-8 bg-kiwi-dark/95 border border-kiwi-green/20 rounded-2xl shadow-2xl backdrop-blur-md clip-reveal z-50 pointer-events-none" role="region" aria-hidden="true">
+            <div class="flex justify-between items-start mb-4">
+                <div class="flex items-center gap-2 text-kiwi-green">
+                    <i data-lucide="fingerprint" class="w-5 h-5"></i>
+                    <span class="font-mono text-xs tracking-widest uppercase opacity-80">The Architect</span>
+                </div>
+                <button id="close-enigma" class="text-kiwi-light/40 hover:text-kiwi-light transition-colors" aria-label="Close Creator Information">
+                    <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+            </div>
+            <p class="text-sm font-serif italic text-kiwi-light/80 leading-relaxed">
+                "Behind the canvas is a recently graduated student exploring the technical world. Driven by the desire to build robust systems and impact the world in a soothing way—blending the timeless elegance of past architectures with the algorithms of the future."
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const trigger = document.getElementById('enigma-trigger');
+        const content = document.getElementById('enigma-content');
+        const closeBtn = document.getElementById('close-enigma');
+
+        function toggleEnigma() {
+            const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+            if (isExpanded) {
+                content.classList.remove('active');
+                content.classList.add('pointer-events-none');
+                trigger.setAttribute('aria-expanded', 'false');
+                content.setAttribute('aria-hidden', 'true');
+            } else {
+                content.classList.add('active');
+                content.classList.remove('pointer-events-none');
+                trigger.setAttribute('aria-expanded', 'true');
+                content.setAttribute('aria-hidden', 'false');
+            }
+        }
+
+        trigger.addEventListener('click', toggleEnigma);
+        closeBtn.addEventListener('click', toggleEnigma);
+    </script>
+</body>
+</html>
