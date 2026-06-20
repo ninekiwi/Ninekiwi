@@ -16,6 +16,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ninekiwi.com">
 
+    <link rel="icon" type="image/png" href="logo.png">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -124,11 +126,7 @@
     <nav class="w-full fixed top-0 z-50 glass-panel border-b border-kiwi-light/10" aria-label="Main Navigation">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3 group cursor-pointer" aria-label="ninekiwi home">
-                <svg viewBox="0 0 24 24" class="w-7 h-7 text-kiwi-green group-hover:rotate-90 transition-transform duration-500 ease-out" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <circle cx="12" cy="12" r="10" stroke-opacity="0.5"/>
-                    <circle cx="12" cy="12" r="6" stroke-dasharray="2 3"/>
-                    <circle cx="12" cy="12" r="2" fill="currentColor"/>
-                </svg>
+                <img src="logo.png" alt="ninekiwi logo" class="w-7 h-7 group-hover:rotate-90 transition-transform duration-500 ease-out">
                 <span class="font-serif font-semibold text-xl tracking-wider">ninekiwi</span>
             </div>
             <a href="mailto:hello@ninekiwi.com" class="text-sm font-medium tracking-wide hover:text-kiwi-green transition-colors flex items-center gap-2 group">
@@ -236,8 +234,14 @@
     </main>
 
     <footer class="w-full py-8 border-t border-kiwi-light/10 mt-auto relative" aria-label="Site Footer">
-        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center text-kiwi-light/40 text-xs">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-kiwi-light/40 text-xs">
             <p>&copy; <span id="year"></span> ninekiwi. All rights reserved.</p>
+            
+            <div class="flex items-center gap-6">
+                <a href="Terms&Conditions.html" class="hover:text-kiwi-green transition-colors">Terms & Conditions</a>
+                <a href="privacy-policy.html" class="hover:text-kiwi-green transition-colors">Privacy Policy</a>
+                <a href="Payments.html" class="hover:text-kiwi-green transition-colors">Payments</a>
+            </div>
             
             <button id="enigma-trigger" class="focus:outline-none group p-2" aria-label="Reveal Creator Information" aria-expanded="false" aria-controls="enigma-content">
                 <svg viewBox="0 0 24 24" class="w-4 h-4 text-kiwi-brown/40 group-hover:text-kiwi-green group-hover:rotate-180 transition-all duration-700 ease-in-out" fill="none" stroke="currentColor" stroke-width="1.5">
